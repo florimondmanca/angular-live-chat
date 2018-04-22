@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Message } from './message';
+import { environment } from 'environments/environment';
 
-const SERVER_URL = 'ws://localhost:8080/chat';
+const SERVER_URL = environment.SERVER_URL;
 
 @Injectable()
 export class SocketService {
